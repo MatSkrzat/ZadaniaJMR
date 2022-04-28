@@ -1,4 +1,4 @@
-﻿namespace DemoSource
+﻿namespace Zadanie2.DemoSource
 {
     public class Group
     {

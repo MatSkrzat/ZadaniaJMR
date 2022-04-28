@@ -1,4 +1,4 @@
-﻿namespace DemoSource
+﻿namespace Zadanie1.DemoSource
 {
     public class Person
     {

@@ -1,11 +1,13 @@
-﻿namespace DemoTarget
+﻿using Zadanie2.DemoSource;
+
+namespace Zadanie2.DemoTarget
 {
-    internal class ToDo
+    public class ToDo
     {
-        public IEnumerable<(DemoSource.Account, DemoSource.Person)>
+        public IEnumerable<(Account, Person)>
             MatchPersonToAccount(
-            IEnumerable<DemoSource.Group> groups,
-            IEnumerable<DemoSource.Account> accounts,
+            IEnumerable<Group> groups,
+            IEnumerable<Account> accounts,
             IEnumerable<string> emails)
         {
             foreach (var person in GetAllPeopleFromGroups(groups))
@@ -20,7 +22,7 @@
                 }
             }
         }
-        private IEnumerable<DemoSource.Person> GetAllPeopleFromGroups(IEnumerable<DemoSource.Group> groups)
+        private IEnumerable<Person> GetAllPeopleFromGroups(IEnumerable<Group> groups)
         {
             foreach (var group in groups)
             {

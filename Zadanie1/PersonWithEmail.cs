@@ -1,4 +1,4 @@
-﻿namespace DemoTarget
+﻿namespace Zadanie1.DemoTarget
 {
     public class PersonWithEmail
     {
